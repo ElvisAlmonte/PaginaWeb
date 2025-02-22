@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con Pie de Página</title>
+    <title>Página con Header y Pie de Página</title>
     <style>
         body {
             margin: 0;
@@ -11,12 +11,6 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-        }
-
-        .content {
-            flex: 1;
-            padding: 20px;
-            text-align: center;
         }
 
         header {
@@ -43,10 +37,17 @@
         }
 
         .header-image {
-            width: 80%; /* Ajusta el ancho de la imagen */
-            height: auto;
+            width: 100%; /* Mantener el ancho completo */
+            height: auto; /* Mantener la relación de aspecto */
+            max-height: 300px; /* Ajustar la altura máxima de la imagen */
             display: block;
-            margin: 0 auto; /* Centra la imagen */
+            margin: 0 auto; /* Centrar la imagen */
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
         }
 
         footer {

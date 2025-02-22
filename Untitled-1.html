@@ -1,44 +1,53 @@
-<footer>
-    <div class="footer-container">
-        <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Pie de Página</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-<style>
-    footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-    }
-    .footer-container {
-        max-width: 1200px;
-        margin: auto;
-    }
-    nav ul {
-        list-style: none;
-        padding: 0;
-    }
-    nav ul li {
-        display: inline;
-        margin: 0 10px;
-    }
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-    }
-    nav ul li a:hover {
-        text-decoration: underline;
-    }
-</style>
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+        }
+
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Bienvenido a Mi Página</h1>
+        <p>Este es un ejemplo de página con un pie de página fijo.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:info@tuempresa.com">info@tuempresa.com</a></p>
+    </footer>
+
+</body>
+</html>
